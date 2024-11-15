@@ -25,12 +25,7 @@ async def start(client, message):
     await message.react(emoji="🔥")
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ],[
-            InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/vj_bot_disscussion"),
-            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/vj_bots')
-        ],[
-            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            InlineKeyboardButton(' Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -46,29 +41,11 @@ async def start(client, message):
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
-            ],[
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                InlineKeyboardButton(' Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                InlineKeyboardButton(' Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
@@ -187,29 +164,11 @@ async def start(client, message):
         else:
             if PREMIUM_AND_REFERAL_MODE == True:
                 buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton(' Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
                 ]]
             else:
                 buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton(' Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
                 ]]
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
@@ -357,7 +316,7 @@ async def start(client, message):
                         f_caption = getattr(msg, 'caption', '')
                 else:
                     media = getattr(msg, msg.media.value)
-                    file_name = getattr(media, 'file_name', '')
+                    file_name = getattr(media, 'file_name', '@Team_HDT')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
                     await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
@@ -438,7 +397,7 @@ async def start(client, message):
                 ]
             )
         )
-        await asyncio.sleep(1200)
+        await asyncio.sleep(600)
         await k.edit("<b>Your message is successfully deleted!!!</b>")
         return
         
@@ -527,7 +486,7 @@ async def start(client, message):
                     ]
                 )
             )
-            await asyncio.sleep(1200)
+            await asyncio.sleep(600)
             await k.edit("<b>Your message is successfully deleted!!!</b>")
             return
     user = message.from_user.id
@@ -572,7 +531,7 @@ async def start(client, message):
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '@VJ_Botz  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@Team_HDT  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -584,9 +543,6 @@ async def start(client, message):
                 caption=f_caption,
                 reply_markup=InlineKeyboardMarkup(button)
             )
-            btn = [[
-                InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
-            ]]
             k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
             await asyncio.sleep(600)
             await msg.delete()
@@ -596,7 +552,7 @@ async def start(client, message):
             pass
         return await message.reply('No such file exist.')
     files = files_
-    title = '@VJ_Botz  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files["file_name"].split()))
+    title = '@Team_HDT  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files["file_name"].split()))
     size=get_size(files["file_size"])
     f_caption=files["caption"]
     if CUSTOM_FILE_CAPTION:
@@ -643,9 +599,6 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(button)
     )
-    btn = [[
-        InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
-    ]]
     k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
     await asyncio.sleep(600)
     await msg.delete()
@@ -1226,7 +1179,7 @@ async def deletemultiplefiles(bot, message):
         parse_mode=enums.ParseMode.HTML
     )
 
-@Client.on_message(filters.command("shortlink"))
+@Client.on_message(filters.command("shortlinkzzz"))
 async def shortlink(bot, message):
     if SHORTLINK_MODE == False:
         return 
@@ -1260,7 +1213,7 @@ async def shortlink(bot, message):
     await save_group_settings(grpid, 'is_shortlink', True)
     await reply.edit_text(f"<b>Successfully added shortlink API for {title}.\n\nCurrent Shortlink Website: <code>{shortlink_url}</code>\nCurrent API: <code>{api}</code></b>")
     
-@Client.on_message(filters.command("setshortlinkoff"))
+@Client.on_message(filters.command("setshortlinkoffzzz"))
 async def offshortlink(bot, message):
     if SHORTLINK_MODE == False:
         return 
@@ -1276,7 +1229,7 @@ async def offshortlink(bot, message):
     # ENABLE_SHORTLINK = False
     return await message.reply_text("Successfully disabled shortlink")
     
-@Client.on_message(filters.command("setshortlinkon"))
+@Client.on_message(filters.command("setshortlinkonzzz"))
 async def onshortlink(bot, message):
     if SHORTLINK_MODE == False:
         return 
@@ -1292,7 +1245,7 @@ async def onshortlink(bot, message):
     # ENABLE_SHORTLINK = True
     return await message.reply_text("Successfully enabled shortlink")
 
-@Client.on_message(filters.command("shortlink_info"))
+@Client.on_message(filters.command("shortlink_infozzz"))
 async def showshortlink(bot, message):
     if SHORTLINK_MODE == False:
         return 
@@ -1330,7 +1283,7 @@ async def showshortlink(bot, message):
             return await message.reply_text("Shortener url and Tutorial Link Not Connected. Check this commands, /shortlink and /set_tutorial")
         
 
-@Client.on_message(filters.command("set_tutorial"))
+@Client.on_message(filters.command("set_tutorialzzz"))
 async def settutorial(bot, message):
     if SHORTLINK_MODE == False:
         return 
@@ -1508,7 +1461,7 @@ async def remove_premium_cmd_handler(client, message):
     else:
         await message.reply_text("Usage: /remove_premium user_id")
         
-@Client.on_message(filters.command("plan"))
+@Client.on_message(filters.command("planzzz"))
 async def plans_cmd_handler(client, message): 
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
@@ -1523,7 +1476,7 @@ async def plans_cmd_handler(client, message):
         reply_markup=reply_markup
     )
         
-@Client.on_message(filters.command("myplan"))
+@Client.on_message(filters.command("myplanzzz"))
 async def check_plans_cmd(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
