@@ -117,7 +117,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
+                    text=f"[🔺{get_size(file['file_size'])}🔻] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
                 ),
             ]
             for file in files
@@ -125,29 +125,29 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     try:
         if settings['max_btn']:
@@ -358,29 +358,29 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
 
     if offset != "":
@@ -513,36 +513,36 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
+                    text=f"[🔺{get_size(file['file_size'])}🔻] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
                 ),
             ]
             for file in files
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
 
     if offset != "":
@@ -677,36 +677,36 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
+                    text=f"[🔺{get_size(file['file_size'])}🔻] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
                 ),
             ]
             for file in files
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
 
     if offset != "":
@@ -870,36 +870,36 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
+                    text=f"[🔺{get_size(file['file_size'])}🔻] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
                 ),
             ]
             for file in files
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     req = query.from_user.id
     offset = 0
@@ -1008,7 +1008,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"⚜️[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
+                    text=f"[🔺{get_size(file['file_size'])}🔻] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
                 ),
             ]
             for file in files
@@ -1032,44 +1032,44 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                    InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                    InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                    InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                    InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                    InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
                 ]
             )
             btn.insert(0, [
-                InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+                InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
             ])
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                    InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                    InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                    InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                    InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                    InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
                 ]
             )
             btn.insert(0, [
-                InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+                InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
             ])
                 
     except KeyError:
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
 
     if offset != "":
@@ -2381,7 +2381,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "tele":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVJ01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2422,7 +2422,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "share":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2438,7 +2438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "song":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2479,7 +2479,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "sticker":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2495,7 +2495,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "tamil_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2511,7 +2511,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "english_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2527,7 +2527,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "hindi_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2543,7 +2543,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "telugu_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2559,7 +2559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "malayalam_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2575,7 +2575,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "urdu_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2591,7 +2591,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "bangladesh_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
 
             await client.edit_message_media(
@@ -2608,7 +2608,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "kannada_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2624,7 +2624,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "gujarati_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/lochakpochak")
                   ]]
         
             await client.edit_message_media(
@@ -2819,36 +2819,36 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
+                    text=f"[🔺{get_size(file['file_size'])}🔻] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}", callback_data=f'{pre}#{file["file_id"]}'
                 ),
             ]
             for file in files
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🧨ǫᴜᴀʟɪᴛʏ🧨', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🧨ᴇᴘɪsᴏᴅᴇs🧨", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("🧨sᴇᴀsᴏɴs🧨",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("🎀𝐒𝐞𝐧𝐝 𝐀𝐥𝐥🎀", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎀ʟᴀɴɢᴜᴀɢᴇs🎀", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("🎀ʏᴇᴀʀs🎀", callback_data=f"years#{key}")
         ])
     if offset != "":
         try:
