@@ -245,7 +245,7 @@ Nᴀᴍᴇ - {}"""
 
 <b> Size ⚙️: {file_size}</b>
 
-<b> Support @Team_HDT </b>""" 
+<b> Support @Filmy_tube </b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
